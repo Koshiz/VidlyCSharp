@@ -24,5 +24,20 @@ namespace Vidly.Controllers
                 new Customer { Id = 2, Name = "Mary Williams"}
             };
         }
+
+        
+        [Route("Customers/Details/{id}")]
+        public ActionResult Details(int id)
+        {
+            var customer = GetCustomer().SingleOrDefault(c => c.Id == id);
+            
+            if(customer == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(customer);
+
+        }
     }
 }
