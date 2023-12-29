@@ -4,8 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@foreach (var movie in Model)
-{
-    <li>@movie.Name</li>
-}
 
+
+
+<table class="table table-bordered table-hover">
+    <thread>
+        <tr>
+            <th>Movies</th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <th>@movie.Name</th>
+            </tr>
+                
+        }
+    </tbody>
+</table>
