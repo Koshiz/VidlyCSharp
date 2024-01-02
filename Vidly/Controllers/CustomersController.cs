@@ -22,9 +22,6 @@ namespace Vidly.Controllers
             {
                 new Customer { Id = 1, Name = "John Smith"},
                 new Customer { Id = 2, Name = "Mary Williams"},
-                new Customer { Id = 3, Name = "Jesse Pinkman"},
-                new Customer { Id = 4, Name = "Koshila Sandaru"},
-                new Customer { Id = 5, Name = "Mark Zucker"}
             };
         }
 
